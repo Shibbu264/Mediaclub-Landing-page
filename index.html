@@ -1,0 +1,134 @@
+
+<html >
+<head>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<link href="/dist/output.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<body id="body">
+    <header>
+<img src="images/Screenshot 2023-06-09 001717.png" id="fmclogo" >
+<div class="header-cont">
+  <div class="custom-control custom-switch  " >
+    <input type="checkbox" class="custom-control-input " id="customSwitch1">
+    <label class="custom-control-label" for="customSwitch1"></label>
+    
+  </div><p id="mode">Dark mode</p>
+  <a href="">Events</a>
+  <a href="">Team</a>
+  <a href="">Our story</a>
+    <a href="">About us</a>
+    
+   
+    </div>
+</header>
+<div class="page-content">
+  
+    <img src="https://media.licdn.com/dms/image/C560BAQGJJzWGkNQxow/company-logo_200_200/0/1554706999559?e=1694044800&v=beta&t=ORhJEmQSBrzDGoc4QlKW4rOmI_RCg6qxkWk6A6VqWQQ">
+<h1>The Media Club IIT(BHU) Varanasi</h1>
+<p>The journalistic and creative Publishing Faction of IIT(BHU) Varanasi</p>
+<div class="social-icons">
+    <a href="https://www.facebook.com/MediaClub.IITBHU" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/mediaclub.iitbhu/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/channel/UCcqFItG3T_DxMwltEr5nLvQ?sub_confirmation=1" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://medium.com/@mediaclub.iitbhu" target="_blank"><i class="fab fa-medium"></i></a>
+</div>
+<div class="newsletter">
+  <h2>MediaClub IIT (BHU) Varanasi's Weekly Newsletter</h2>
+  <form>
+    <input type="email" id="email" placeholder="Type your email..." required>
+    <button type="submit" id="subscribe" class="subscribe">Subscribe</button>
+  </form>
+</div>
+
+
+<button id="viewpoll">View poll results!</button>
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="wrapper"  id="poll">
+    
+      <button class="modal-close-btn" id="modal-close-btn" disabled>X</button>
+    
+    
+    <h4>Let's have a quick poll!</h4>
+    
+      <div class="poll-container">
+        <h2 class="poll-question" id="ques"></h2>
+        <div class="poll-options">
+          <button id="poll-option-0" class="poll-option" onclick="voteOption(0)"></button>
+          <button id="poll-option-1" class="poll-option" onclick="voteOption(1)"></button>
+          <button id="poll-option-2" class="poll-option" onclick="voteOption(2)"></button>
+          <button id="poll-option-3" class="poll-option" onclick="voteOption(3)"></button>
+          <button class="nextques" id="nextques" onclick="nextquestion()">Different Question !</button>
+        </div>
+        <div id="poll-results"></div>
+      </div>
+  </div>
+  <div class="bodycontent">
+    <div class="leftpart" id="leftpart">
+<h1 class="typewriter">Who are we?</h1>
+<p>Media Club is the official campus student media body of IIT BHU.It aims to provide information about every events and happenings inside the college unfiltered and  without any biasing.It also emphasises on inculcating the skills of content writing and design among students by holding many competitions.Our club's annual fest that is FMC Weekend is held every year in the week of february.</p>
+</div>
+
+<div class="rightpart" id="fmcimg">
+  <h1>FMC Weekend'23</h1>
+
+  
+
+</div>
+
+</div>
+
+</div>
+<h1 class="eventsheader">Events</h1>
+<div class="section3">
+
+  <div class="card1" >
+    <img class="card-img-top" id="frsguide" src="" alt="Card image cap">
+   
+    <button id="back" class="btn btn-primary"><i class="arrow left"></i></button>
+    <button id="next" class="btn btn-primary"><i class="arrow right"></i></button>
+
+  </div>
+  <div class="leftpart qt" id="leftpart" >
+    <h1 class="typewriter">Fresher's Guide</h1>
+    <p>Congratulations freshers!!!
+      You've cleared the famed JEE exams and you're finally here in one of the prestigious IITs. Homesick yet? Don't know how to get to class in this bigger than Jupiter campus? Wondering whom to call when you're sick? Want to know how to change your branch? Worry not! MEDIA CLUB is here to answer all of your questions with the much awaited Freshers' Survival Guide :)
+      It's a shame to be in the holy city of Varanasi and this 100 year old college and not explore it's depths. But where should you start exploring? We've got that covered! We bring you places to visit in Varanasi and a campus map in case you get lost XD. This last but not the least part of FSG is topped up with IIT lingo and Emergency contacts as well! Do let us know about how much you enjoyed this guide.</p>
+    <a href="f1.pdf" download>
+<b><i class="fa fa-download" aria-hidden="true">  pdf</i></b>
+
+    </a>
+    </div>
+  
+
+
+</div>
+  
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+</body>
+</html>
+
+</div>
+<footer><p>MEDIA CLUB 2023 All rights reserved</p></footer>
+
+
+</body>
+</html>
