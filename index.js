@@ -32,7 +32,7 @@ document.getElementById("body").style.cursor='auto'
 )
 
 let poll=document.getElementById("poll")
-setTimeout(  function(){poll.style.display="none"},3000)
+setTimeout(  function(){poll.style.display="block"},3000)
 
 let pollData = {
     options: ['Yes', 'Definitely yes','mujhe kya mai toh aalu hu','nhi!'],
